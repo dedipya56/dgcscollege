@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "instamojo/instamojo-php": "^1.0"
+    }
+}

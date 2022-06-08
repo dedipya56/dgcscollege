@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Portal</title>
+    <link rel ="stylesheet" href="../styles/styles.css">
+</head>
+   <body style="background-image: url('../images/college1.jpg');background-size: cover; background-repeat: no-repeat;">
+    <p id="clgname"> <bold>DGCS COLLEGE</bold></p>
+        <form action="insertDetails.php" method="post" enctype="multipart/form-data"  style="width: 550px; text-align: center; margin-left: 30%;margin-bottom: 50px; margin-top: 30px;">
+            <h1 style="text-align:centre;">REGISTRATION FORM</h1> <hr/>        
+        <p>
+             <label for="StudentId">STUDENT ID:</label>
+             <input type="text" name="StudentId" required>
+        </p>
+        <p>
+            <label for="image">Photo</label>
+            <input type="file" name="image" >
+        </p>
+
+        <p>
+            <label for="password">PASSWORD :</label>
+            <input type="text" name="password" required>
+       </p>
+            
+        <p>
+             <label for="firstName">First Name:</label>
+             <input type="text" name="first_name" id="firstName" required>
+         </p>
+      
+         <p>
+             <label for="lastName">Last Name:</label>
+             <input type="text" name="last_name" id="lastName">
+         </p>
+        
+         <p>
+             <label for="Gender">Gender:</label>
+             <input type="radio" name="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" >
+            <label for="female">Female</label>
+            
+         </p>
+        
+         <p>
+            <label for="fatherName">Father Name:</label>
+            <input type="text" name="father_name" id="fatherName">
+        </p>
+
+        <p>
+            <label for="motherName">Mother Name:</label>
+            <input type="text" name="mother_name" id="motherName">
+        </p>
+
+        <p>
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="dob" id="dob">
+        </p>
+
+        <p>
+            <label for="schoolName">school Name:</label>
+            <input type="text" name="school_name" id="schoolName">
+        </p>
+
+        <p>
+            <label for="10th">10th Percentage</label>
+            <input type="text" name="tenth" >
+        </p>
+
+        <p>
+            <label for="inter">Inter / Diploma college</label>
+            <input type="text" name="inter" >
+        </p>
+
+        <p>
+            <label for="+2">Inter / Diploma percentage:</label>
+            <input type="text" name="interMarks" >
+        </p>
+
+        <p>
+            <label for="branch">Branch</label>
+           
+            <select name="branch" >
+                <option>COMPUTER SCIENCE ENGINEERING</option>
+                <option >INFORMATION TECHNOLOGY ENGINEERING</option>
+                <option >ELECTROICS AND COMMUNICATION ENGINEERING </option>
+                <option>ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                <option>MECHANICAL ENGINEERING</option>
+                <option>CIVIL ENGINEERING</option>
+                <option>CHEMICAL ENGINEERING</option>
+            </select>
+            
+
+        </p>
+
+        <p>
+            <label for="year">Year of joining:</label>
+            <input type="year" name="year" >
+        </p>
+        
+
+        <p>
+            <label for="eamcet">Eamcet Rank:</label>
+            <input type="number" name="eamcet" id="eamcet">
+        </p>
+
+        <p>
+             <label for="Address">Address:</label>
+             <input type="text" name="address" id="Address">
+         </p>
+      
+         <p>
+             <label for="emailAddress">Email Address:</label>
+             <input type="text" name="email" id="emailAddress" required>
+         </p>
+      <!-- <p>
+            <label for="totalfee">Total Fee:</label>
+            <input type="number" name="totalfee" id="totalfee" required>
+        </p> -->  
+
+        <p>
+            <label for="feepaid">Fee paid:</label>
+            <input type="number" name="fee_paid" id="feepaid" value="0">
+        </p>
+
+        <button type="submit" value="Submit"  > SUBMIT</button>
+        
+        </form>
+        
+       <a href="./marks/marks.html"><button style="width: auto; margin: 10px 150px;">Register marks</button></a>
+        <a href="./attendance/attendance.html"><button style="width: auto; margin: 0 150px;">Mark attendance</button></a>
+        <a href="admin_menu.html"><button style="width: auto; margin: 0 150px;" title="click me to go to login page">Back</button></a> 
+
+    </body>
+</html>

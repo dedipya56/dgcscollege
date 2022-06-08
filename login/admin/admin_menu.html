@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3da4f03368.js" crossorigin="anonymous"></script>
+    <link rel ="stylesheet" href="../styles/styles.css">
+    <title>Admin Menu</title>
+    <style>
+        ul ,#ul{
+           
+            list-style-type:disc;
+    background-color:transparent;
+    display:list-item;
+        }
+        li a{
+            display: inline;
+            color:red;
+        }
+    </style>
+
+</head>
+<body style="background-image: url('../images/college-logo.png');background-size: cover; background-repeat: no-repeat;">
+    <a href="./admin.html"  title="Go to previous page"style="float:left ; text-decoration:none; color : black;font-size:30px;"><i class="fas fa-arrow-circle-left"></i></a>
+    <p id="clgname"> <bold>DGCS COLLEGE</bold></p><br/><br>
+    <p ><strong style="margin-left:50px ;">Admin Menu:</strong></p>
+    <ul id="ul">
+        <li>Want to Register a student<a href="register.html">Click Me</a></li>
+        <li>Want to Register marks for a registered student<a href="./marks/marks.html">Click Me</a></li>
+        <li>Want to Mark attendance for a registered student<a href="./attendance/attendance.html">Click Me</a></li>
+        <li> Add a working day date<a href="./attendance/date.html">click me</a></li>
+        <li>Details of all students : </li>
+                <ul> 
+
+                    <li> <a href ="./showDetails.php">View Student Details </a></li>
+                    <li><a href ="./marks/sem.php">View Marks Details </a></li>
+                    <li><a href ="./attendance/sem1.php">View Attendance Details </a></li>
+
+                </ul>
+        <li>If you want to view particular details:</li>
+                <ul>
+                    <li><a href='./view1.php?value=1' >View all details by student id</a></li>
+                    <li><a href='./view1.php?value=2'>View student id's who are present for a subject on a particular date</a></li>
+                    <li><a href='./view1.php?value=3'>View student id's who passed a particular subject</a></li>
+                </ul>
+        
+                
+     </ul>
+</body>
+</html>

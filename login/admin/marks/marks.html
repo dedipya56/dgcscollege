@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="../../styles/styles.css">
+    <title>Register Marks</title>
+</head>
+<body style="background-image: url('../images/college1.jpg');background-size: cover; background-repeat: no-repeat;">
+    <p id="clgname"> <bold>DGCS COLLEGE</bold></p>
+    <form action="./insertMarks.php" method="post" style="width: 500px; text-align: center; margin-left: 30%; margin-top:30px;margin-bottom: 50px;">
+        <h1 style="text-align:centre;">REGISTRATION FORM</h1> <hr/>        
+        <p>
+             <label for="StudentId">STUDENT ID:</label>
+             <input type="text" name="StudentId" required>
+        </p>
+
+        <p>
+            <label for="sem">Semester</label>
+           
+            <select name="sem" >
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3 </option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+            </select>
+            
+
+        </p>
+
+        <p>
+            <label>sub1 :</label>
+            <input type="number" name="one" value="0">
+       </p>
+            
+        <p>
+             <label >sub2</label>
+             <input type="number" name="two" value="0">
+         </p>
+      
+         <p>
+             <label >sub3</label>
+             <input type="number" name="three" value="0">
+         </p>
+        
+         <p>
+             <label>sub4</label>
+             <input type="number" name="four" value="0">
+            
+         </p>
+        
+         <p>
+            <label >sub5</label>
+            <input type="number" name="five" value="0">
+        </p>
+
+        <p>
+            <label>sub6</label>
+            <input type="number" name="six" value="0">
+        </p>
+        <button type="submit" value="Submit" > SUBMIT</button>
+         
+        
+    </form>
+    
+        <a href="../attendance.html"><button style="width: auto; margin: 10px 50px 0 500px;">Mark attendance</button></a>
+        <a href="../admin_menu.html"><button style="width: auto; margin: 10px 250px 0 50px;" title="click me to go to login page">Back</button></a> 
+
+</body>
+</html>
